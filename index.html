@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korok Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div id="hestunametag">Hestu</div>
+    <div id="hestu">
+
+        <div id="greeting"></div>
+
+    </div>
+
+    <div id="userresponse" onclick="press()">
+        <div id="response"></div>
+    </div>
+
+    <div id="korok">
+        <div id="yahaha"></div>
+        <div id="givenextclue" onclick="giveNextClue()"></div>
+    </div>
+
+    <div id="clue">
+        <div id="clue1">Brrrr! It's so cold in here!</div>
+        <div id="clue2">I'm trapped like a chipmunk!</div>
+        <div id="clue3">The fish say they want breakfast!</div>
+        <div id="clue4">Nobody in here but us chickens!</div>
+        <div id="clue5">Well, well, well...</div>
+        <div id="clue6">It sure is pretty
+            in the Sacred Grotto!</div>
+    </div>
+
+    <input type="text" id="codeinput">
+    <button id="submitbutton1" onclick="checkCode('pya')">Check</button>
+    <button id="submitbutton2" onclick="checkCode('hat')">Check</button>
+    <button id="submitbutton3" onclick="checkCode('yr')">Check</button>
+    <button id="submitbutton4" onclick="checkCode('phd')">Check</button>
+    <button id="submitbutton5" onclick="checkCode('bi')">Check</button>
+    <div id="blankerror">Waaa! You have to enter the secret code!</div>
+    <div id="incorrect">Shalaka?! Oh no...try again!</div>
+
+
+
+</body>
+
+</html>

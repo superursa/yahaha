@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  width: device-width;
+}
+
+body {
+  background-color: #dbdfaa;
+  font-family: "Open Sans", sans-serif;
+}
+
+#hestu {
+  display: block;
+  height: fit-content;
+  max-width: 200px;
+  font-size: 1em;
+  background-color: black;
+  opacity: 0.6;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #91918e;
+  border-radius: 55px;
+  padding: 20px 80px;
+}
+
+#hestunametag {
+  display: block;
+  height: fit-content;
+  font-size: 0.75em;
+  font-style: italic;
+  background-color: transparent;
+  position: absolute;
+  top: 2px;
+  left: 50px;
+  color: #f5f4da;
+  text-shadow: 2px 2px black;
+  z-index: 3;
+}
+
+#userresponse {
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  max-width: 150px;
+  position: relative;
+  left: 150px;
+  font-size: 0.75em;
+  background-color: black;
+  opacity: 0.6;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f5f4da;
+  border-radius: 55px;
+  padding: 10px 50px;
+}
+
+#userresponse:before {
+  content: "";
+  border-style: solid;
+  border-width: 10px 15px 10px 15px;
+  border-color: transparent transparent transparent #f5f4da;
+  position: absolute;
+  left: -19px;
+}
+
+#greeting {
+  color: #f5f4da;
+}
+
+#korok {
+  display: none;
+  height: 300px;
+  width: 300px;
+  font-size: 2em;
+  background-color: #73a9ad;
+  position: absolute;
+  z-index: 3;
+}
+
+#yahaha {
+  display: none;
+  color: #f5f0bb;
+}
+
+#givenextclue {
+  display: none;
+  color: orange;
+}
+
+#response {
+  color: #f5f4da;
+}
+
+#clue {
+  display: none;
+}
+
+#clue1 {
+  display: none;
+}
+
+#clue2 {
+  display: none;
+}
+
+#clue3 {
+  display: none;
+}
+
+#clue4 {
+  display: none;
+}
+
+#clue5 {
+  display: none;
+}
+
+#clue6 {
+  display: none;
+}
+
+#codeinput {
+  display: none;
+}
+
+#submitbutton1 {
+  display: none;
+}
+
+#submitbutton2 {
+  display: none;
+}
+
+#submitbutton3 {
+  display: none;
+}
+
+#submitbutton4 {
+  display: none;
+}
+
+#submitbutton5 {
+  display: none;
+}
+
+#blankerror {
+  display: none;
+}
+
+#incorrect {
+  display: none;
+}
