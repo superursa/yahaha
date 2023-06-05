@@ -1,5 +1,6 @@
 const documentLoaded = function () {
   let hestu = document.getElementById("hestu");
+  let hestuimg = document.getElementById("hestuimg");
   let hestunametag = document.getElementById("hestunametag");
   let greeting = document.getElementById("greeting");
   let userresponse = document.getElementById("userresponse");
@@ -28,17 +29,20 @@ const documentLoaded = function () {
 // When the app is first opened, Hestu will greet the user and explain the game. Onclick to go to next speech bubble.
 
 function hestu1() {
+  hestuimg.src = "assets/hestustand.png";
   greeting.innerHTML = "Hey, hey, I'm Hestu! Musician of Korok Forest!";
   response.innerHTML = "Oh snap!";
 }
 
 function hestu2() {
+  hestuimg.src = "assets/hestunotgood.png";
   greeting.innerHTML =
     "I'm playing hide and seek with my korok friends! Shoko...but...I'm not very good at it!!! Can you help me?";
   response.innerHTML = "Sure!";
 }
 
 function hestu3() {
+  hestuimg.src = "assets/hestudown.png";
   greeting.innerHTML =
     "When you find a korok, enter the secret code to get the next clue!";
   response.innerHTML =
@@ -46,9 +50,12 @@ function hestu3() {
 }
 
 function hestuend() {
+  hestuimg.style.display = "block";
+  hestuimg.src = "assets/hestudance.png";
   hestu.style.display = "block";
   hestunametag.style.display = "block";
   greeting.style.display = "block";
+  userresponse.style.display = "block";
   response.style.display = "block";
   greeting.innerHTML =
     "Uwaaa! You found all my friends! Shala-zah! But there's one more clue, just for you!";
@@ -56,6 +63,7 @@ function hestuend() {
 }
 
 function hestublank() {
+  hestuimg.style.display = "none";
   hestu.style.display = "none";
   hestunametag.style.display = "none";
   greeting.style.display = "none";
@@ -77,10 +85,14 @@ function press() {
       hestublank();
       break;
     case "I sure do love puzzles!":
-      hestu.style.display = "none";
-      greeting.style.display = "none";
+      hestu.style.display = "block";
+      greeting.style.display = "block";
+      greeting.innerHTML = "It sure is pretty in the Sacred Grotto!";
+      greeting.style.color = "orange";
+      userresponse.style.display = "none";
       response.style.display = "none";
-      clue6on();
+      //clue.style.display = "block";
+      //clue6on();
       break;
   }
 }
@@ -93,7 +105,7 @@ function clueBoxOn() {
 }
 
 function clueBoxOff() {
-  clue.style.displaly = "none";
+  clue.style.display = "none";
   codeinput.style.display = "none";
 }
 

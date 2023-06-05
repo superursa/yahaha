@@ -5,8 +5,18 @@
 }
 
 body {
-  background-color: #dbdfaa;
+  background-color: #29522c;
   font-family: "Open Sans", sans-serif;
+}
+
+#hestuimg {
+  display: block;
+  height: fit-content;
+  max-width: 300px;
+  position: relative;
+  left: 25px;
+  top: 5px;
+  padding: 10px;
 }
 
 #hestu {
@@ -30,7 +40,7 @@ body {
   font-style: italic;
   background-color: transparent;
   position: absolute;
-  top: 2px;
+  top: 325px;
   left: 50px;
   color: #f5f4da;
   text-shadow: 2px 2px black;
@@ -41,7 +51,7 @@ body {
   display: block;
   height: fit-content;
   width: fit-content;
-  max-width: 150px;
+  max-width: 100px;
   position: relative;
   left: 150px;
   font-size: 0.75em;
@@ -68,12 +78,19 @@ body {
 }
 
 #korok {
+  text-align: center;
+  align-items: center;
+  padding: 20px 10px;
   display: none;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  max-width: 200px;
   font-size: 2em;
   background-color: #73a9ad;
+  border-style: solid;
+  border-radius: 15px;
   position: absolute;
+  top: 125px;
+  left: 85px;
   z-index: 3;
 }
 
@@ -93,6 +110,22 @@ body {
 
 #clue {
   display: none;
+  text-align: center;
+  height: fit-content;
+  max-width: 200px;
+  width: 200px;
+  font-size: 1em;
+  position: absolute;
+  top: 200px;
+  left: 25px;
+  background-color: black;
+  color: #f5f4da;
+  opacity: 0.6;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #91918e;
+  border-radius: 5px;
+  padding: 20px 80px;
 }
 
 #clue1 {
@@ -121,26 +154,58 @@ body {
 
 #codeinput {
   display: none;
+  text-align: center;
+  height: 20px;
+  background-color: #f5f4da;
+  color: black;
+  position: absolute;
+  top: 350px;
+  left: 125px;
 }
 
 #submitbutton1 {
   display: none;
+  background-color: #1a292b;
+  color: #f5f4da;
+  position: absolute;
+  top: 375px;
+  left: 170px;
 }
 
 #submitbutton2 {
   display: none;
+  background-color: #1a292b;
+  color: #f5f4da;
+  position: absolute;
+  top: 375px;
+  left: 170px;
 }
 
 #submitbutton3 {
   display: none;
+  background-color: #1a292b;
+  color: #f5f4da;
+  position: absolute;
+  top: 375px;
+  left: 170px;
 }
 
 #submitbutton4 {
   display: none;
+  background-color: #1a292b;
+  color: #f5f4da;
+  position: absolute;
+  top: 375px;
+  left: 170px;
 }
 
 #submitbutton5 {
   display: none;
+  background-color: #1a292b;
+  color: #f5f4da;
+  position: absolute;
+  top: 375px;
+  left: 170px;
 }
 
 #blankerror {
@@ -149,4 +214,5 @@ body {
 
 #incorrect {
   display: none;
+  color: #f27522;
 }
