@@ -206,6 +206,7 @@ function giveNextClue() {
 // Turn on korok and yahaha blocks when user has entered correct code.
 
 function korokFound() {
+  codeinput.value = "";
   korok.style.display = "block";
   yahaha.style.display = "block";
   givenextclue.style.display = "block";
